@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(7, 7, 7);
+    font-family: segoe ui, sans-serif;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    color: rgb(21, 201, 36);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 44px;
+}
+
+div.myDiv {
+ width: 80%;
+ padding: 5px;
+ border-radius: 20px;
+ border: 2px solid gray;
+ margin: auto;
+}
+
+.back-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: none;
+            color: #22ce13;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: background-color 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+            background-color: #272c31;
+        }
+
+.top-nav {
+            text-align: right;
+            padding: 5px;
+        }
+
+ body {
+            animation: fadeIn 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        body.fade-out {
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+div.myDiv.education {
+    margin-bottom: 30px;
+}

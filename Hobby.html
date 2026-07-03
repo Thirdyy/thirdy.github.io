@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second page of my Portfolio</title>
+    <link rel="stylesheet" href="Hobby.css">
+     <link rel="icon" type="image/png" sizes="16x16" href="Luna.png">
+</head>
+<body>
+    <div class="top-nav">
+        <a href="Nery.html" class="back-btn" id="backBtn">&larr; Back</a>
+    </div>
+
+    <h1>Welcome to the second page of my Portfolio</h1>
+    <p>This is where I share more about the things I enjoy doing
+                outside of work and studies</p>
+
+    <div class="container">
+        <section id="about">
+            <h2>My Hobby</h2>
+
+            <p>
+                Playing musical instruments is one of my greatest passions. 
+                I can play the guitar, bass guitar, keyboard, and drums. Music has become an important part of my life, 
+                especially because I serve as the Sound Director in our church, 
+                where I also operate and manage the sound system during worship services and special events.
+            </p>
+
+             <p>
+                I enjoy watching movies and documentaries, particularly those related to war, 
+                history, military strategy, biographies, and action films. 
+                These genres help me gain a deeper understanding of historical events, leadership, 
+                and different cultures while also providing entertainment.
+             </p>
+
+             <p>
+                Playing basketball is one of my favorite recreational activities. 
+                It helps me stay physically active, improve teamwork and discipline, 
+                and develop sportsmanship both on and off the court.        
+             </p>
+
+             <p>
+                I love reading books and articles about different topics. 
+                Although I do not always finish every book I start, I enjoy learning new ideas 
+                and expanding my knowledge through reading whenever I have the opportunity.
+             </p>
+
+             <p>
+                I have a strong interest in lifelong learning. During my free time, 
+                I often study new skills and explore different fields, such as cooking, 
+                music production, leadership, technology, and other practical life skills. 
+                I believe that learning should never stop
+             </p>
+
+              <p>
+                I also enjoy spending quiet time reflecting, planning personal goals, and improving myself. 
+                I believe that using my free time wisely helps me become more productive and prepared for future opportunities.
+              </p>
+
+              <p>
+                I like exploring new experiences and challenging myself to learn things outside my comfort zone. 
+                Whether it is acquiring a new skill, trying a different hobby, or taking on new responsibilities, 
+                I enjoy opportunities that help me grow as a person.
+              </p>
+
+              <p>
+                Most of my free time is spent doing activities that allow me 
+                to relax while continuously developing my knowledge, creativity, leadership, and practical skills. 
+                These hobbies not only bring me enjoyment 
+                but also help shape my character and prepare me for both personal and professional growth.
+              </p>
+        </section>
+    </div>
+     <div class="nav-buttons">
+        <a href="Skill.html" class="next-btn">Next Page &rarr;</a>
+    </div>
+            <script>
+        document.getElementById('nextBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            const link = this.getAttribute('href');
+            document.body.classList.add('fade-out');
+            setTimeout(function () {
+                window.location.href = link;
+            }, 500);
+        });
+    </script>
+
+    <style>
+         body {
+            animation: fadeIn 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        body.fade-out {
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .top-nav {
+            text-align: right;
+            padding: 5px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: none;
+            color: #22ce13;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .back-btn:hover {
+            background-color: #272c31;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            padding: 30px 20px 40px;
+        }
+
+        .next-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background-color: transparent;
+            color: #22ce13;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 20px ;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .next-btn:hover {
+            background-color: #272c31;
+        }
+
+    </style>
+</body>
+</html>
